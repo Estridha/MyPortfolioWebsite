@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
-  <AppHeader />
-  <router-view />
-  <AppFooter />
-</div>
+  <div class="wrapper" :style="{height: (windowHeight.toString() + 'px')}">
+    <AppHeader />
+    <router-view />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -16,6 +16,24 @@ export default {
     AppHeader,
     AppFooter,
   },
+  data() {
+    return {
+      windowHeight: window.innerHeight
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize);
+    })
+  },
+  beforeUnmount() { 
+    window.removeEventListener('resize', this.onResize); 
+  },
+  methods: {  
+    onResize() {
+      this.windowHeight = window.innerHeight
+    }
+  }
 };
 </script>
 
@@ -26,10 +44,9 @@ export default {
   list-style: none;
   text-decoration: none;
 }
-
-html, body {
+html,
+body {
   margin: 0;
-  height: 100%;
 }
 
 #app {
@@ -39,11 +56,10 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100%;
 }
 
 .wrapper {
-  height: 100%;
+  height: v-bind(windowHeight);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
