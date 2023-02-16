@@ -1,8 +1,10 @@
 <template>
   <div class="wrapper" :style="{height: (windowHeight.toString() + 'px')}">
     <AppHeader />
+    <div class="content-container">
     <router-view />
     <AppFooter />
+  </div>
   </div>
 </template>
 
@@ -56,6 +58,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow: none;
+}
+
+.content-container {
+  overflow-y: scroll;
 }
 
 .wrapper {

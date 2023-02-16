@@ -8,7 +8,7 @@
   <script>
   export default {
     name: "AppFooter",
-    
+
   };
   </script>
   
@@ -19,7 +19,6 @@
     justify-content: center;
     width: 100%;
     padding-bottom: 5px;
-    z-index: 1;
   
     img {
       margin: 0 1rem;
