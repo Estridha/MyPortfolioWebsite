@@ -62,13 +62,14 @@ body {
 }
 
 .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
   overflow-y: scroll;
 }
 
 .wrapper {
-  height: v-bind(windowHeight);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  overflow: none;
 }
 </style>

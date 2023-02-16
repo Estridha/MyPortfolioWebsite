@@ -57,6 +57,7 @@ nav {
   text-transform: uppercase;
   z-index: 1;
   width: 100%;
+  height: 15%;
 
   a {
     color: #000000;

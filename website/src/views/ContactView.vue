@@ -1,0 +1,14 @@
+<template>
+    <div class="contact">
+      <h1>This is a contact page</h1>
+    </div>
+  </template>
+  
+  <script>
+  // @ is an alias to /src
+  
+  export default {
+    name: 'ContactView',
+  }
+  </script>
+  
