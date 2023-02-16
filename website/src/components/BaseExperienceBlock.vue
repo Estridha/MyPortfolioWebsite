@@ -55,7 +55,6 @@ export default {
     }
   }
   .desc-container {
-    align-self: stretch;
     flex: 2;
   }
 }
