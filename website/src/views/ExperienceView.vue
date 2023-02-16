@@ -1,13 +1,51 @@
 <template>
   <div class="experience">
-    <h1>This is an experience page</h1>
+    <BaseExperienceBlock
+      type="work"
+      title="Junior Full-Stack Software Developer"
+      location="GetAccept"
+      description="lorem ipsum"
+    />
+    <BaseExperienceBlock
+      type="education"
+      title="Bachelor of Science in Information Systems"
+      location="Lund University of Economics and Management"
+      description="lorem ipsum"
+    />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import BaseExperienceBlock from "@/components/BaseExperienceBlock.vue";
 
 export default {
-  name: 'ExperienceView',
-}
+  name: "ExperienceView",
+  components: {
+    BaseExperienceBlock,
+  },
+};
 </script>
+
+<style scoped lang="scss">
+.block {
+  border-radius: 2rem;
+  background-color: #ffb703;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 1rem;
+
+  &.work {
+    background: #219ebc;
+  }
+  img {
+    max-width: 20%;
+    padding: 1rem;
+    height: fit-content;
+    flex: 1;
+  }
+  .desc-container {
+    flex: 2;
+  }
+}
+</style>

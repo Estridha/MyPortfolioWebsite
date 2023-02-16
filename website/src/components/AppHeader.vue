@@ -148,7 +148,7 @@ nav {
     }
 
     .menu-items {
-      background-color: blanchedalmond;
+      background-color: #ffb803;
       box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
       height: 100vh;
       width: 100%;
