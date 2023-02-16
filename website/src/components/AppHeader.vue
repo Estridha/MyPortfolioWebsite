@@ -15,9 +15,17 @@
       </div>
       <div :class="{ menuOpen: menuIsOpen }" class="menu-items">
         <li><router-link @click="toggleMenu" to="/">Home</router-link></li>
-        <li><router-link @click="toggleMenu" to="/experience">Experience</router-link></li>
-        <li><router-link @click="toggleMenu" to="/projects">Projects</router-link></li>
-        <li><router-link @click="toggleMenu" to="/contact">Contact</router-link></li>
+        <li>
+          <router-link @click="toggleMenu" to="/experience"
+            >Experience</router-link
+          >
+        </li>
+        <li>
+          <router-link @click="toggleMenu" to="/projects">Projects</router-link>
+        </li>
+        <li>
+          <router-link @click="toggleMenu" to="/contact">Contact</router-link>
+        </li>
       </div>
     </div>
   </nav>
@@ -44,15 +52,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 nav {
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+  z-index: 1;
   width: 100%;
 
-  li {
-    list-style: none;
-  }
-
   a {
-    text-decoration: none;
-    text-transform: uppercase;
     color: #000000;
     padding: 1rem;
 
@@ -139,7 +145,7 @@ nav {
         transition: transform 0.4s ease-in-out;
       }
     }
-    
+
     .menu-items {
       background-color: blanchedalmond;
       box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);

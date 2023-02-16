@@ -15,8 +15,6 @@
   <style scoped lang="scss">
   footer {
     display: flex;
-    position: absolute;
-    bottom: 0;
     justify-content: center;
     width: 100%;
     padding-bottom: 5px;
