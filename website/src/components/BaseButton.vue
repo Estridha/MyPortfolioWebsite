@@ -18,10 +18,15 @@ button {
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 80%;
+  }
 }
 </style>

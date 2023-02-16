@@ -12,6 +12,12 @@
       location="Lund University of Economics and Management"
       description="lorem ipsum"
     />
+    <BaseExperienceBlock
+      type="education"
+      title="Bachelor of Science in Information Systems"
+      location="Lund University of Economics and Management"
+      description="lorem ipsum"
+    />
   </div>
 </template>
 

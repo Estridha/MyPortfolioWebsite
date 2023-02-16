@@ -66,7 +66,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 85%;
-  overflow-y: scroll;
 }
 
 .wrapper {
