@@ -18,7 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;

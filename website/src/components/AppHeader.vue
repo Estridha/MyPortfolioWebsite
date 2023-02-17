@@ -7,6 +7,9 @@
       <li><router-link to="/contact">Contact</router-link></li>
     </div>
     <div class="mobile-nav-container">
+      <div class="current-view-container">
+        <h3>{{ $route.name }}</h3>
+      </div>
       <button class="mobile-button" @click="toggleMenu"></button>
       <div :class="{ menuOpen: menuIsOpen }" class="hamburger-lines">
         <span class="line line1"></span>
@@ -82,7 +85,21 @@ nav {
   .mobile-nav-container {
     display: block;
     position: relative;
-    height: 60px;
+    height: 100%;
+
+    .current-view-container {
+      height: 2rem;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      border-left: solid 2px;
+      display: flex;
+      align-items: center;
+
+      h3 {
+        margin: 0 0 0 1rem;
+      }
+    }
 
     @media only screen and (min-width: 450px) {
       display: none;

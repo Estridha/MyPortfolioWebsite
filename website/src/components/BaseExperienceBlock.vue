@@ -1,19 +1,17 @@
 <template>
   <div :class="type" class="wrapper">
+    <div class="desc-container">
+      <h4>{{ location }}</h4>
+      <h3>{{ title }}</h3>
+      <p class="date">{{ date }}</p>
+      <p>{{ description }}</p>
+    </div>
     <img v-if="type === 'work'" src="@/assets/icons/work.svg" alt="" />
     <img
       v-if="type === 'education'"
       src="@/assets/icons/university.svg"
       alt=""
     />
-    <div class="desc-container">
-      <h3>{{ title }}</h3>
-      <h4>{{ location }}</h4>
-      <p>{{ description }}</p>
-    </div>
-  </div>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -21,7 +19,7 @@
 export default {
   name: "BaseExperienceBlock",
   props: {
-    logoSrc: String,
+    date: String,
     type: String,
     title: String,
     location: String,
@@ -38,24 +36,41 @@ export default {
   display: flex;
   align-items: center;
   text-align: left;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 2rem;
+  padding: 1rem 3rem;
+
+  @media only screen and (max-width: 450px) {
+    padding: 1rem;
+  }
 
   &.work {
     background-color: #219ebc;
   }
   img {
-    padding-right: 2rem;
+    padding-left: 2rem;
     max-width: 20%;
     height: fit-content;
     flex: 1;
 
     @media only screen and (max-width: 450px) {
-      display: none;
+        display: none;
     }
   }
   .desc-container {
     flex: 2;
+
+    .date {
+      border-radius: 8px;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    h4 {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 </style>
