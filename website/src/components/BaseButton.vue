@@ -22,11 +22,15 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
 
   &:hover {
     cursor: pointer;
     opacity: 80%;
+  }
+
+  &.tertiary {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid black;
   }
 }
 </style>
