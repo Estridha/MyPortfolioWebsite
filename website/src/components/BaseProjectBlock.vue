@@ -44,7 +44,8 @@ export default {
 
 <style scoped lang="scss">
 .wrapper {
-  background-color: #219ebc;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   border-radius: 2rem;
   display: flex;
   text-align: left;
@@ -74,7 +75,7 @@ export default {
           padding-right: 0.5rem;
           &:not(:first-child) {
             padding-left: 0.5rem;
-            border-left: solid black 1px;
+            border-left: solid var(--light-color) 1px;
           }
         }
 
@@ -102,7 +103,8 @@ export default {
         padding: 1rem;
         border-radius: 8px;
         margin: 0 1rem 1rem 0;
-        background-color: aquamarine;
+        background-color: var(--light-color);
+        color: var(--dark-color);
         @media only screen and (max-width: 740px) {
           margin: 0 0 1rem 0;
           width: 47%;

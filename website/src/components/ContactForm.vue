@@ -67,20 +67,25 @@ export default {
 }
 .main-container {
   padding: 1rem;
-  box-shadow: 0px 0px 0.5rem #00000033;
   border-radius: 8px;
   margin: 2rem;
-  background-color: #ffb8034b;
+  background-color: var(--dark-color);
+  color: var(--light-color);
 
   .form-group {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #9e9e9e;
     input {
       height: 2rem;
+      &:focus-visible {
+        outline: var(--light-color) auto 1px;
+      }
     }
     textarea {
       height: 15rem;
+      &:focus-visible {
+        outline: var(--light-color) auto 1px;
+      }
     }
   }
   .form-group input,

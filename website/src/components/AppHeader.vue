@@ -45,8 +45,6 @@ export default {
   methods: {
     toggleMenu() {
       this.menuIsOpen = !this.menuIsOpen;
-      console.log(this.menuIsOpen);
-      //return this.author.books.length > 0 ? "Yes" : "No";
     },
   },
 };
@@ -63,7 +61,6 @@ nav {
   height: 15%;
 
   a {
-    color: #000000;
     padding: 1rem;
 
     &:hover {
@@ -92,7 +89,7 @@ nav {
       position: absolute;
       top: 2rem;
       left: 2rem;
-      border-left: solid 2px;
+      border-left: solid var(--dark-color) 2px;
       display: flex;
       align-items: center;
 
@@ -146,7 +143,7 @@ nav {
         height: 2px;
         width: 100%;
         border-radius: 10px;
-        background: #0e2431;
+        background: var(--dark-color);
       }
 
       .line1 {
@@ -165,8 +162,7 @@ nav {
     }
 
     .menu-items {
-      background-color: #ffb803;
-      box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+      background-color: var(--light-color);
       height: 100vh;
       width: 100%;
       transform: translate(-150%);

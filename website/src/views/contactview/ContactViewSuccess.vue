@@ -31,7 +31,8 @@ export default {
   .message-container {
     margin: 2rem;
     padding: 1rem;
-    background: green;
+    background: var(--dark-color);
+    color: var(--light-color);
     border-radius: 8px;
 
     p {

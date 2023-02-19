@@ -32,7 +32,8 @@ export default {
 <style scoped lang="scss">
 .wrapper {
   border-radius: 2rem;
-  background-color: #ffb703;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   display: flex;
   align-items: center;
   text-align: left;
@@ -41,10 +42,6 @@ export default {
 
   @media only screen and (max-width: 450px) {
     padding: 1rem;
-  }
-
-  &.work {
-    background-color: #219ebc;
   }
   img {
     padding-left: 2rem;

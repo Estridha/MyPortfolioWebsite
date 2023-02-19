@@ -14,10 +14,12 @@ export default {
 
 <style scoped lang="scss">
 button {
-  background-color: #4caf50; /* Green */
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--button-color);
   border: none;
   border-radius: 8px;
-  color: white;
+  color: var(--light-color);
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -26,11 +28,6 @@ button {
   &:hover {
     cursor: pointer;
     opacity: 80%;
-  }
-
-  &.tertiary {
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid black;
   }
 }
 </style>
