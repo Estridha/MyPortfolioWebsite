@@ -51,6 +51,7 @@ export default {
 }
 html,
 body {
+  overflow: none;
   margin: 0;
   background-color: var(--light-color);
   color: var(--dark-color);
@@ -78,6 +79,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   overflow: none;
+  height: 100%;
 }
 
 .content-container {
