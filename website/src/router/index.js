@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ExperienceView from '../views/ExperienceView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
-import ContactView from '../views/ContactView.vue'
-
+import ContactView from '../views/contactview/ContactView.vue'
+import ContactViewSuccess from '../views/contactview/ContactViewSuccess.vue'
 
 const routes = [
   {
@@ -25,6 +25,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/contact/success',
+    name: 'message sent',
+    component: ContactViewSuccess
   },
 ]
 

@@ -50,6 +50,7 @@ export default {
   text-align: left;
   margin: 1rem 2rem;
   padding: 1rem 3rem;
+  max-height: min-content; 
 
   @media only screen and (max-width: 740px) {
     padding: 1rem;
