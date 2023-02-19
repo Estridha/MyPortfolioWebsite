@@ -1,28 +1,31 @@
 <template>
   <div class="wrapper">
     <h1 class="title">Hi, I'm Estrid</h1>
-    <p>I am an information system student and full-stack developer. Welcome to my website!</p>
+    <p>
+      I am an information system student and full-stack developer. Welcome to my
+      website!
+    </p>
     <div class="button-container">
-      <BaseButton title="Projects" @userClicked="goTo('/projects')"/>
-      <BaseButton title="Experience" @userClicked="goTo('/experience')"/> 
-  </div>
+      <BaseButton title="Projects" @userClicked="goTo('/projects')" />
+      <BaseButton title="Experience" @userClicked="goTo('/experience')" />
+    </div>
   </div>
 </template>
 
 <script>
-import BaseButton from '@/components/BaseButton.vue';
+import BaseButton from "@/components/BaseButton.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     BaseButton,
   },
-  methods: {  
+  methods: {
     goTo(location) {
       this.$router.push(location);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -31,16 +34,16 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 2rem;
+  padding: 0 2rem;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  button {
-    margin: 2rem;
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
   }
 }
-
 </style>

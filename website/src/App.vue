@@ -48,9 +48,9 @@ export default {
   font-family: 'Inter', sans-serif;
   list-style: none;
   text-decoration: none;
-}
 html,
 body {
+  max-width: 100vw;
   margin: 0;
   background-color: var(--light-color);
   color: var(--dark-color);
@@ -69,6 +69,9 @@ body {
   }
   a {
     color: var(--link-color);
+    &:hover {
+      color: var(--link-hover-color);
+    }
   }
 }
 
@@ -90,11 +93,9 @@ body {
   overflow-y: scroll;
   
   > * {
+    width: 100vw;
     max-width: 70rem;
   }
 }
-
-.wrapper {
-  overflow: none;
 }
 </style>

@@ -24,6 +24,8 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin: 1rem;
+  min-width: 10rem;
 
   &:hover {
     cursor: pointer;
