@@ -17,7 +17,7 @@
       <input
         type="hidden"
         name="_next"
-        value="http://localhost:8080/contact/success"
+        value="http://www.estrid.netlify.app/contact/success"
       />
       <div class="form-group">
         <label for="name">Name:</label>
