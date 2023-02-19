@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" :style="{ height: windowHeight.toString() + 'px' }">
-    <AppHeader />
+    <AppHeader :windowHeight="windowHeight" />
     <div class="content-container">
       <router-view />
       <AppFooter />
@@ -51,7 +51,6 @@ export default {
 }
 html,
 body {
-  overflow: none;
   margin: 0;
   background-color: var(--light-color);
   color: var(--dark-color);

@@ -85,7 +85,7 @@ export default {
       height: 10rem;
       width: fit-content;
       margin-left: 2rem;
-      @media only screen and (max-width: 450px) {
+      @media only screen and (max-width: 740px) {
         display: none;
       }
     }

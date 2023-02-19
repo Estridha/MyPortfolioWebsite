@@ -16,7 +16,7 @@
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <div :class="{ menuOpen: menuIsOpen }" class="menu-items">
+      <div :class="{ menuOpen: menuIsOpen }" :style="cssProps" class="menu-items">
         <li><router-link @click="toggleMenu" to="/">Home</router-link></li>
         <li>
           <router-link @click="toggleMenu" to="/experience"
@@ -37,6 +37,9 @@
 <script>
 export default {
   name: "AppHeader",
+  props: {
+    windowHeight: Number
+  },
   data() {
     return {
       menuIsOpen: false,
@@ -47,6 +50,13 @@ export default {
       this.menuIsOpen = !this.menuIsOpen;
     },
   },
+  computed: {
+    cssProps() {
+      return {
+        '--window-height': this.windowHeight.toString() + "px",
+      }
+    }
+  }
 };
 </script>
 
@@ -74,7 +84,7 @@ nav {
     display: flex;
     justify-content: center;
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 740px) {
       display: none;
     }
   }
@@ -98,7 +108,7 @@ nav {
       }
     }
 
-    @media only screen and (min-width: 450px) {
+    @media only screen and (min-width: 740px) {
       display: none;
     }
 
@@ -163,7 +173,7 @@ nav {
 
     .menu-items {
       background-color: var(--light-color);
-      height: 100vh;
+      height: var(--window-height);
       width: 100%;
       transform: translate(-150%);
       display: flex;
