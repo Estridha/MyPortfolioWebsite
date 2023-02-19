@@ -16,7 +16,11 @@
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <div :class="{ menuOpen: menuIsOpen }" :style="cssProps" class="menu-items">
+      <div
+        :class="{ menuOpen: menuIsOpen }"
+        :style="cssProps"
+        class="menu-items"
+      >
         <li><router-link @click="toggleMenu" to="/">Home</router-link></li>
         <li>
           <router-link @click="toggleMenu" to="/experience"
@@ -38,7 +42,7 @@
 export default {
   name: "AppHeader",
   props: {
-    windowHeight: Number
+    windowHeight: Number,
   },
   data() {
     return {
@@ -53,10 +57,10 @@ export default {
   computed: {
     cssProps() {
       return {
-        '--window-height': this.windowHeight.toString() + "px",
-      }
-    }
-  }
+        "--window-height": this.windowHeight.toString() + "px",
+      };
+    },
+  },
 };
 </script>
 
@@ -183,7 +187,7 @@ nav {
       text-align: center;
 
       li {
-        margin-bottom: 3rem;
+        margin: 1.5rem 0;
         font-size: 1.5rem;
         font-weight: 500;
       }
