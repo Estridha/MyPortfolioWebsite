@@ -93,7 +93,7 @@ body {
   overflow-y: scroll;
   
   > * {
-    width: 100vw;
+    width: 100%;
     max-width: 70rem;
   }
 }

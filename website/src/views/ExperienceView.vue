@@ -42,19 +42,21 @@
       title="Bachelor of Science in Information Systems"
       location="Lund University of Economics and Management"
       date="August 2019 - Present"
+      description="The programme has a broad scope and a multi-disciplinary orientation. It includes elements of computer science such as system development (mainly in Java, C# and .NET), databases and modelling. Other courses within the programme are Group Dynamics, IT Law, IT and Organisation and Project Management."
     />
     <BaseExperienceBlock
       type="education"
       title="Education Abroad Programme with focus on Technology Management"
       location="University of California Santa Barbara"
       date="August 2021 - June 2022"
-      description="Participated in the Education Abroad Program on a full scholarship."
+      description="Participated in the Education Abroad Program on a full scholarship. My main focus was technology management but also took courses in Marketing."
     />
     <BaseExperienceBlock
       type="education"
       title="Graphic Design"
       location="Malmö University"
       date="January 2019 - June 2019"
+      description="In this course I learnt the fundamental principles of Graphic Design. The course included typography, branding, composition and color theory"
     />
   </div>
 </template>
