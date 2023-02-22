@@ -12,6 +12,17 @@
         { name: 'Code on Github', href: 'https://github.com/Estridha/kevan-doyle' },
       ]"
     />
+    <BaseProjectBlock
+      customer="Personal"
+      title="Personal Portfolio Website"
+      date="2022"
+      filename="personal-portfolio.png"
+      description="Designed and built this personal portfolio website."
+      :technologies="['JavaScript', 'Vue.js', 'HTML5', 'SaSS']"
+      :links="[
+        { name: 'Show Code', href: 'https://github.com/Estridha/MyPortfolioWebsite' },
+      ]"
+    />
   </div>
 </template>
 
